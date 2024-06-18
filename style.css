@@ -1,0 +1,77 @@
+body{
+    background-color: #d3d3d1;
+    margin: 0;
+    padding: 0;
+}
+.cabecario{
+    width: 100%;
+    height: 52px;
+    background-color: white;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icones{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+
+.icone_iniciar{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+.primeira_sessao, .segunda_sessao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.perfil{
+    width: 230px;
+    height: 350px;
+    background-color: aqua;
+    margin-left: 55px;
+    border-radius: 10px;
+}
+
+.primeiro_post{
+    width: 500px;
+    height: 450px;
+    background-color: blue;
+    border-radius: 10px;
+    
+}
+
+.noticias{
+    width: 320px;
+    height: 350px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.recentes{
+    width: 230px;
+    height: 350px;
+    background-color: aqua;
+    margin-left: 55px;
+    border-radius: 10px;
+}
+
+.comece_uma_publicacao {
+    width: 500px;
+    height: 450px;
+    background-color: blue;
+    border-radius: 10px
+}
+
+.anuncios{
+    width: 320px;
+    height: 350px;
+    background-color: aqua;
+    border-radius: 10px;
+}
