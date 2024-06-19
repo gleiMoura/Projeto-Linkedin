@@ -16,19 +16,22 @@ body{
 .icones{
     width: 30px;
     height: 30px;
-    background-color: blue;
+    /* background-color: blue; */
+}
+.icone_In{
+    width: 30px;
+    height: 30px;
 }
 
 .icone_iniciar{
     width: 30px;
     height: 30px;
-    background-color: blue;
+    /* background-color: blue; */
 }
-.primeira_sessao, .segunda_sessao {
+.container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 10px;
 }
 
 .perfil{
@@ -37,21 +40,27 @@ body{
     background-color: aqua;
     margin-left: 55px;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .primeiro_post{
     width: 500px;
-    height: 450px;
+    height: 150px;
     background-color: blue;
     border-radius: 10px;
+    margin-bottom: 10px;
     
 }
-
+.sessao_direita{
+    margin: 0 45px 0 1px;
+}
 .noticias{
     width: 320px;
     height: 350px;
     background-color: aqua;
     border-radius: 10px;
+    margin-bottom: 10px;
+
 }
 
 .recentes{
