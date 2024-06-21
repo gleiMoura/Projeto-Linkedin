@@ -46,11 +46,23 @@ body{
 .primeiro_post{
     width: 500px;
     height: 150px;
-    background-color: blue;
+    background-color: white;
     border-radius: 10px;
     margin-bottom: 10px;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+.pesquisar_primeiro_post{
+    /* display: flex; */
+    /* flex-direction: row; */
+
+}
+.icones_principal{
+    width: 25px;
+    height: 25px;
+}
+
 .sessao_direita{
     margin: 0 45px 0 1px;
 }
