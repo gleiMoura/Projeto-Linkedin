@@ -18,16 +18,14 @@ body{
     height: 30px;
     /* background-color: blue; */
 }
-.icone_In{
-    width: 30px;
-    height: 30px;
+.icone_cabecario{
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
 }
 
-.icone_iniciar{
-    width: 30px;
-    height: 30px;
-    /* background-color: blue; */
-}
+
+
 .container{
     display: flex;
     flex-direction: row;
@@ -92,7 +90,7 @@ body{
 .p_icons{
     width: 40px;
     align-items: center;
-    margin: 0;
+    padding: 0;
     
 
     /* background-color: aqua; */
