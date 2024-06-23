@@ -5,7 +5,7 @@ body{
 }
 .cabecario{
     width: 100%;
-    height: 52px;
+    height: 54px;
     background-color: white;
     margin-bottom: 30px;
     display: flex;
@@ -16,15 +16,40 @@ body{
 .icones{
     width: 30px;
     height: 30px;
-    /* background-color: blue; */
 }
 .icone_cabecario{
     width: 25px;
     height: 25px;
     margin-top: 8px;
 }
+.icone_linkedin{
+    width: 35px;
+    height: 35px;
+    margin-top: 8px;
+}
+.input_pesquisar{
+    width: 300px;
+    height: 35px;
+    border-radius: 3px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: rgb(235, 237, 249);
+}
+.txt_icon_cabecario{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 0;
+}
 
+.icone_cabecario_eu{
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 50%;
 
+}
 
 .container{
     display: flex;
@@ -39,6 +64,25 @@ body{
     margin-left: 55px;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+.capa_perfil_img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+.foto_perfil{
+    display: flex;
+    /* justify-content: center; */
+    position: absolute;
+    margin: -40px 0 0 78px;
+
+}
+.foto_perfil_img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 .primeiro_post{
@@ -71,50 +115,54 @@ body{
 
 }
 .icones_primeiro_post{
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* background-color: beige;    */
     font-size: 15px; 
     align-items: center;
-    
-    
 }
 .icones_principal{
     width: 22px;
     height: 22px; 
-    /* background-color: red; */
 }
 
 .p_icons{
     width: 40px;
     align-items: center;
-    padding: 0;
-    
-
-    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
 }
 .p_txt{
     display: flex;
-    
+    margin-left: 5px;
 }
-
-
-
-
-
 
 .sessao_direita{
     margin: 0 45px 0 1px;
 }
-.noticias{
-    width: 320px;
-    height: 350px;
-    background-color: aqua;
-    border-radius: 10px;
-    margin-bottom: 10px;
 
+.noticias{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    font-family: sans-serif; 
+    font-size: 14px;
+
+}
+.titulo_noticias_h2{
+    margin: 0 0 0 0;
+    background-color: aqua;
+}
+.titulo_noticias{
+    margin: 15px 0 10px 18px;
+    color: rgb(56, 52, 52);
+}
+.p_noticias{
+    margin-top: 4px;
+    font-size: 11px;
+    color: #808080;
 }
 
 .recentes{
