@@ -67,7 +67,6 @@ body{
     flex-direction: row;
     justify-content: space-around;
 }
-
 .perfil{
     width: 230px;
     height: 380px;
@@ -75,18 +74,17 @@ body{
     margin-left: 55px;
     border-radius: 10px;
     margin-bottom: 10px;
+    position: relative;
 }
 .capa_perfil_img{
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    position: relative;
 }
 .foto_perfil{
-    display: flex;
     position: absolute;
-    margin: -40px 0 0 78px;
-
+    top: 30px;
+    left: 78px;
 }
 .foto_perfil_img{
     width: 70px;
@@ -176,9 +174,8 @@ body{
 .icones_primeiro_post{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 15px; 
-    align-items: center;
 }
 .icones_principal{
     width: 22px;
@@ -187,6 +184,7 @@ body{
 
 .p_icons{
     width: 40px;
+    margin-right: 100px;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -194,7 +192,7 @@ body{
 .p_txt{
     white-space: nowrap;
     display: flex;
-    /* margin-left: 5px; */
+    margin-left: 5px;
 }
 
 .sessao_direita{
@@ -365,7 +363,7 @@ body{
 
 .anuncios{
     width: 300px;
-    height: 350px;
+    height: 260px;
     background-color: white;
     border-radius: 10px;
 }
@@ -380,7 +378,7 @@ body{
 .foto_perfil_linkedin{
     display: flex;
     position: absolute;
-    margin: -40px 0 0 7px;
+    margin: -40px 0 0 15px;
 
 }
 .foto_perfil_linkedin_img{
@@ -388,6 +386,108 @@ body{
     height: 70px;
     position: absolute;
     border-radius: 3px;
-    border: 2px solid rgb(253, 245, 245);
+    border: 2px solid rgb(231, 223, 223);
+}
+
+.nome_linkedin_preimium{
+    margin: 30px 0 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_linkedin_preimium{
+    font-size: 16px; 
+}
+.p_linkedin_preimium{
+    height: 80%;
+    margin: 0 15px 15px 0;
+    display: flex;
+    font-size: 15px; 
+}
+
+.botao_linkedin_premium{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    margin: 0 15px 0 15px;
+    color:  rgba(0, 89, 233, 0.79);
+    border: 2px solid  rgba(0, 89, 233, 0.79);
+    border-radius: 20px;
+}
+
+.p_botao_linkedin{
+    width: 100%;
+    display: flex;
+    margin: 0 0 0 90px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.publicacao{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.caixa_de_publicacao{
+    width: 750px;
+    height: 580px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.304);
+    background-color: white;
+}
+.usuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div_usuario{
+    display: flex;
+}
+
+.foto_usuario{
+    margin: 25px 10px 0 30px;
+}
+
+.foto_usuario_img{  
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid white;
+    
+}
+
+.h3_nome_usuario{
+    margin: 33px 0 2px 0px;
+}
+
+.p_nome_usuario{
+    margin: 0;
+    color: #808080;
+
+}
+
+.botao_de_sair{
+    display: flex;
+
+}
+
+.icone_sair{
+    width: 17px;
+    margin: 25px ;
+    
+}
+/* .caixa_txt_publicacao{
+    
+} */
+
+.input_txt_publicacao{
+    width: 99.5%;
+    height: 300px;
+    border: none;
+    background-color: aqua;
+    font-size: 20px;
+    /* text-wrap: wrap; */
+    
 }
 
