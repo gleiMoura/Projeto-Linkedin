@@ -2,6 +2,7 @@ body{
     background-color: #d3d3d1;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 .cabecario{
     width: 100%;
@@ -359,6 +360,17 @@ body{
     /* background-color: rgb(148, 219, 217); */
     border: 2px solid white;
 }
+.reacoes_publicacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.gostei_publicacao{
+    width: 70px;
+    display: flex;
+    align-items: center;
+}
 
 
 .anuncios{
@@ -431,7 +443,8 @@ body{
 }
 .caixa_de_publicacao{
     width: 750px;
-    height: 550px;
+    height: auto;
+    min-height: 550px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.304);
     background-color: white;
@@ -477,16 +490,19 @@ body{
     margin: 25px ;
     
 }
+
 .input_txt_publicacao{
-    width: 99.2%;
-    height: 300px;
+    width: 100%;
+    height: 200px;
     margin-top: 38px;
     border: solid 1px #80808044;
     font-size: 20px;
-    text-wrap: wrap;
-    
-    
+    outline: none;    
+    resize: none;
+    padding: 5px;
+    box-sizing: border-box;
 }
+
 .icones_publicacao{
     display: flex;
     flex-direction: row;
@@ -527,4 +543,29 @@ body{
     padding: 0 0 0 18px;
     
 }
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.input-container{
+    display: none;
+    
+
+}
+.input-container.show{
+    display: block; 
+}    
+
+.imageContainer{
+    max-height: 180px;
+    overflow-y: scroll;
+}
+
+.imagemAdicionada{
+    width: 100%;
+}
+
 
