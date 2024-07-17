@@ -151,6 +151,7 @@ body{
     background-color: white;
     border-radius: 10px;
     margin-bottom: 10px;
+
 }
 
 .pesquisar_primeiro_post{
@@ -170,7 +171,6 @@ body{
     border-radius: 25px;
     border: solid #808080 1px;
     margin-top: 12px;
-
 }
 .icones_primeiro_post{
     display: flex;
@@ -310,9 +310,8 @@ body{
     height: 600px;
     background-color: white;
     margin-bottom: 10px;
-    border-radius: 10px
+    border-radius: 10px;
 }
-
 .cabecario_publicacao{
     display: flex;
 }
@@ -436,9 +435,15 @@ body{
 }
 
 .publicacao{
-    display: flex;
+    /* display: flex; */
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
     justify-content: center;
-    margin-top: 30px;
+    align-items: center;
+    position: fixed;
 
 }
 .caixa_de_publicacao{
