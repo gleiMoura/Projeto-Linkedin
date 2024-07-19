@@ -305,9 +305,17 @@ body{
     margin: 5px 0 0 0;
 }
 
+.comece_uma_publicacao01{
+    width: 555px;
+    height: 580px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
 .comece_uma_publicacao {
     width: 555px;
-    height: 600px;
+    height: 630px;
     background-color: white;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -359,18 +367,38 @@ body{
     /* background-color: rgb(148, 219, 217); */
     border: 2px solid white;
 }
+
+
 .reacoes_publicacao{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
 }
+.reacoes_icone{
+    margin-right: 5px;
+}
 .gostei_publicacao{
     width: 70px;
     display: flex;
     align-items: center;
 }
+.comentar_publicacao{
+    width: 95px;
+    display: flex;
+    align-items: center;
+}
+.compartilhar_publicacao{
+    width: 115px;
+    display: flex;
+    align-items: center;
+}
+.enviar_publicacao{
+    width: 70px;
+    display: flex;
+    align-items: center;
 
+}
 
 .anuncios{
     width: 300px;
