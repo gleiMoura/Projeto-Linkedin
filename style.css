@@ -357,16 +357,64 @@ body{
     width: 100%;
     height: 450px;
 }
-.emogi_publicacao{
+.total_reacoes{
     display: flex;
+    justify-content: space-between;
 }
 
-.reacao_publicacao{
+.emogi_publicacao{
+    display: flex;
+    position: relative;
+    margin: 5px  5px 0 10px;
+}
+
+.reacao_publicacao1{
     width: 13px;
     border-radius: 50%;
-    /* background-color: rgb(148, 219, 217); */
-    border: 2px solid white;
+    background-color: rgba(116, 139, 220, 0.629);
+    border: 1px solid rgb(203, 203, 203);
 }
+.reacao_publicacao2{
+    width: 13px;
+    position: absolute;
+    left: 11.5px;
+    border-radius: 50%;
+    background-color: rgba(110, 204, 201, 0.714);
+    border: 1px solid rgb(203, 203, 203);
+}
+.reacao_publicacao3{
+    width: 13px;
+    position: absolute;
+    left: 22px;
+    border-radius: 50%;
+    background-color: rgba(148, 133, 163, 0.558);
+    border: 1px solid rgb(203, 203, 203);
+}
+.numero_curtidas{
+    font-size: 13px;
+    margin-left: 25px;
+}
+.contagem_de_reacoes{
+    display: flex;
+    flex-direction: row;
+}
+.numero_de_comentarios{
+    font-size: 13px;
+    margin: 5px 5px 0 0;
+
+}
+.Numero_de_compartilhamentos{
+    font-size: 13px;
+    margin: 5px 15px 0 0;
+}
+.borda_reacoes{
+    width: 92%;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 16px;
+    border: 1px solid red;
+}
+
 
 
 .reacoes_publicacao{
