@@ -189,6 +189,7 @@ body{
     align-items: center;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 .p_txt{
     white-space: nowrap;
@@ -614,6 +615,7 @@ body{
     border: none;
     border-radius: 20px;
     padding: 0 0 0 18px;
+    cursor: pointer;
     
 }
 
