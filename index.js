@@ -8,9 +8,6 @@ let publicacaoObj = [
 
 ]
 
-
-
-
 function mostrarInput() {
     var inputContainer = document.getElementById("inputContainer");
     inputContainer.classList.add("show"); // Adiciona a classe 'show' para exibir o input
@@ -22,7 +19,7 @@ function exibirImagem() {
 
     if (inputUrl !== "") {
         // Cria um elemento <img> e define o atributo src com o valor do input
-        var imagem = document.createElement("img");
+        let imagem = document.createElement("img");
         imagem.src = inputUrl;
         imagem.alt = "Imagem inserida pelo usuário";
         imagem.className = "imagemAdicionada"
@@ -38,30 +35,24 @@ function exibirImagem() {
     }
 }
 
-function abrirAba(nome){
-    const elementoParaAbertura =  document.querySelector(nome)
-    elementoParaAbertura.style.display="flex";
+function abrirAba(nome) {
+    const elementoParaAbertura = document.querySelector(nome)
+    elementoParaAbertura.style.display = "flex";
 }
 
-function fecharAba(nome){
+function fecharAba(nome) {
     const elemento = document.querySelector(nome)
-    elemento.style.display="none";
+    elemento.style.display = "none";
 }
-
-
-
-
-
 
 function adicionaPublicacao() {
     const comeceUmaPublicacao = document.getElementById("todas_publicacoes");
     const legendaPublicacao = document.getElementById("inputTextArea");
     const imagemPublicacao = document.getElementById("imageInput");
-    const imagemContainer = document.getElementById("imageContainer")
-    const imagemAdicionada = document.querySelector(".imagemAdicionada")
+    const imagemContainer = document.getElementById("imageContainer");
+    const imagemAdicionada = document.querySelector(".imagemAdicionada");
 
-    console.log(imagemPublicacao)
-    console.log(imagemAdicionada)
+    console.log("imageInput", imagemPublicacao)
 
     const novaPublicacao = {
         legenda: legendaPublicacao.value,
@@ -69,12 +60,13 @@ function adicionaPublicacao() {
     }
 
     const listaLocalStorage = JSON.parse(localStorage.getItem("publicacaoObj")) //pegando a lista antes de atualizar  / Json para tira de string para ler dado
+    console.log(listaLocalStorage)
     listaLocalStorage.push(novaPublicacao); // colocando novo objeto dentro da lista 
     console.log(listaLocalStorage)
 
     const listaString = JSON.stringify(listaLocalStorage); // transformando em string 
-    localStorage.setItem("publicacaoObj",listaString); // colocando dentro do local storage
-     console.log(listaString)
+    localStorage.setItem("publicacaoObj", listaString); // colocando dentro do local storage
+    console.log(listaString)
 
     comeceUmaPublicacao.innerHTML += `
                 <div class="comece_uma_publicacao" id="publicacao_01">
@@ -117,23 +109,27 @@ function adicionaPublicacao() {
                     </div>
                 </div>
             `;
-            
+
     fecharAba(".publicacao")
     legendaPublicacao.value = ""
-    imagemPublicacao.value = ""      
+    imagemPublicacao.value = ""
     imagemContainer.removeChild(imagemAdicionada)
-            
+
 }
 
-function adicionaLocalStorage(){
+function adicionaLocalStorage() {
+    let publicacoesRegistradas = [];
+    const PublicacoesDoSorage = JSON.parse(localStorage.getItem("publicacaoObj"));
+    if (PublicacoesDoSorage) {
+        publicacoesRegistradas.push(...PublicacoesDoSorage)
+    } else {
+        publicacoesRegistradas = publicacaoObj;
+        const publicacoes = JSON.stringify(publicacaoObj);
+        localStorage.setItem("publicacaoObj", publicacoes)
+    }
 
-    const publicacoesRegistradas = JSON.parse(localStorage.getItem("publicacaoObj"))
-    console.log("registradas ",publicacoesRegistradas)
 
     for (let objeto of publicacoesRegistradas) {
-        
-
-
         comeceUmaPublicacao.innerHTML += `
             
                 <div class="comece_uma_publicacao" id="publicacao_01">
